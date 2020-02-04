@@ -10,6 +10,8 @@ print("hello world!")
 # python好简单
 
 
+
+
 a = "python好简单呀！" # 字符串
 # print(a)
 
