@@ -10,7 +10,7 @@ def login(username, password):
     db = DBTool()
     sql = "select * from tbl_user where username='{}'".format(username)
     res = db.query(sql) # 失败了：False，成功：结果了
-
+    print(res)
     # 2. 判断数据库查询是否成功
     if res == False: # res=Flase：查询数据库失败了
         return False    # 登录失败，返回False
