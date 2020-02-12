@@ -16,11 +16,13 @@ for i in range(1000):
     emailnum=('id',"emailnum")
 
     find_element(driver,userreg).click()
+
     find_element(driver,username).send_keys('adgsa')
     find_element(driver,phonenum).send_keys('1s23213f23r1')
     find_element(driver,emailnum).send_keys('2safd232313')
     find_element(driver,password).send_keys('ae32113')
-
+    
+    time.sleep(5)
     # 判断有没有值
 
     a = find_element(driver,username).get_attribute('value')

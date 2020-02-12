@@ -3,7 +3,8 @@ from selenium import webdriver
 from seleniumtools import find_element
 
 # 1. 打开浏览器:固定的/ 获取浏览器句柄
-driver = webdriver.Chrome(executable_path='chromedriver.exe')
+# driver = webdriver.Chrome(executable_path='chromedriver.exe')
+driver = webdriver.Firefox(executable_path='geckodriver.exe')
 driver.maximize_window()
 for i in range(1000):
     # 2. 输入并访问网址
@@ -24,7 +25,6 @@ for i in range(1000):
     find_element(driver,password).send_keys('ae32113')
 
     # 判断有没有值
-
     a = find_element(driver,username).get_attribute('value')
     b = find_element(driver,phonenum).get_attribute('value')
     c = find_element(driver,emailnum).get_attribute('value')
