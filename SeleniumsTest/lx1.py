@@ -13,7 +13,6 @@ driver.find_element_by_id('username').send_keys("liuyun")
 driver.find_element_by_id('password').send_keys("12345678")
 driver.find_element_by_id('userLogin').click()
 
-
 # 断言
 time.sleep(3)
 try:
