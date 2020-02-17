@@ -10,3 +10,4 @@ def test_01_index():
 
     search_input = ("xpath", '/html/body/div[1]/div/div[1]/div/input')
     find_element(driver, search_input).send_keys("123")
+    
